@@ -16,8 +16,7 @@ root=Tk()
 #modify root window
 root.title("Tic Tac Toe")
 root.configure(background="#030305")
-#root.wm_attributes('-fullscreen','true')
-#root.overrideredirect(1)
+
 #functions
 def restartGame():
     global x
@@ -43,8 +42,6 @@ def popupfunc(resultString):
     resultTxt = Label(frame0,text=resultString,foreground='#FFFFFF',background="#030305",font=('Agency FB',20))     
     resultTxt.grid(row=0,column=0,padx=20,pady=20) 
     
-#    okButton = Button(frame0, text="OK", width=10,command=pop.destroy,foreground='#FFFFFF',background="#030305")
-#    okButton.grid(row=1,column=0,padx=20,pady=20)
     okButton = Button(frame0,command=pop.destroy,text="OK",width=10,relief=FLAT,bd=0,background='#030305', foreground='#91FCFF',activebackground='#030305',activeforeground='#030305',font=('Agency FB',20))
     okButton.grid(row=1,column=0,padx=10,pady=0)
     
@@ -81,10 +78,8 @@ def displaySelection(val):
         if((TTTArray[r,c]==TTTArray[r,c+1]==TTTArray[r,c+2]==200) or (TTTArray[r,c]==TTTArray[r,c+1]==TTTArray[r,c+2]==100)):
             if (TTTArray[r,c]==200):
                 resultString="O wins!"
-#                tkinter.messagebox.showinfo( "Result", "O wins!")
             else:
                 resultString="X wins!"
-#                tkinter.messagebox.showinfo( "Result", "X wins!")
             disable=True 
             
         
@@ -94,20 +89,16 @@ def displaySelection(val):
         if((TTTArray[r,c]==TTTArray[r+1,c]==TTTArray[r+2,c]==200) or(TTTArray[r,c]==TTTArray[r+1,c]==TTTArray[r+2,c]==100)) :
             if (TTTArray[r,c]==200):
                 resultString="O wins!"
-#                tkinter.messagebox.showinfo( "Result", "O wins!")
             else:
                 resultString="X wins!"
-#                tkinter.messagebox.showinfo( "Result", "X wins!")
             disable=True
     r=1
     c=1
     if(((TTTArray[r,c]==TTTArray[r-1,c+1]==TTTArray[r+1,c-1]==100) or (TTTArray[r,c]==TTTArray[r+1,c+1]==TTTArray[r-1,c-1]==100)) or ((TTTArray[r,c]==TTTArray[r-1,c+1]==TTTArray[r+1,c-1]==200) or (TTTArray[r,c]==TTTArray[r+1,c+1]==TTTArray[r-1,c-1]==200))):
         if (TTTArray[r,c]==200):
             resultString="O wins!"
-#            tkinter.messagebox.showinfo( "Result", "O wins!")
         else:
             resultString="X wins!"
-#            tkinter.messagebox.showinfo( "Result", "X wins!")
         disable=True       
                 
     if(disable==True):
@@ -123,10 +114,8 @@ def displaySelection(val):
                     filled=False
         if filled==True:
             popupfunc("Its a draw!")
-#    print(TTTArray) 
  
 #frame
- 
 frame1 = Frame(root,bg="#030305",bd=0,relief=FLAT) 
 frame1.pack(padx=0,pady=0) 
 frame2 = Frame(root, bg="#00E7ED",bd=0,relief=FLAT) 
