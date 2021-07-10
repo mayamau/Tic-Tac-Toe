@@ -13,7 +13,8 @@ Open up a command prompt window in the directory that the code is saved at. Then
 python TicTacToeMultiplayer.py
 ```
 ## Screenshots
-![Tic-Tac-Toe-screengrabs](https://user-images.githubusercontent.com/36638116/125165684-a3e5ab00-e1b5-11eb-8328-1bd7bb750ede.png)
+![Tic-Tac-Toe-screengrabs](https://user-images.githubusercontent.com/36638116/125165711-ca0b4b00-e1b5-11eb-92cd-5ad58a32758a.png)
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
