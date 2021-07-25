@@ -3,10 +3,22 @@
 
 This is a simple multiplayer Tic-Tac-Toe game built with a Tkinter GUI.
 
+## Installation
+
+Clone the repository:
+
+``` 
+https://github.com/mayamau/Tic-Tac-Toe.git
+``` 
+
+Install dependencies via Command Prompt/ Terminal:
+
+``` 
+pip install requirements.txt
+``` 
+
 ## Usage
-
-Open up a command prompt window in the directory that the code is saved at. Then type the following command to launch the application:
-
+After installation, launch the application with the following cmd command:
 
 
 ``` 
