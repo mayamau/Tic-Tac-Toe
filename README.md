@@ -22,7 +22,7 @@ After installation, launch the application with the following cmd command:
 
 
 ``` 
-python TicTacToeMultiplayer.py
+python TicTacToe.py
 ```
 ## Screenshots
 ![Tic-Tac-Toe-screengrabs](https://user-images.githubusercontent.com/36638116/127232846-5c9bdd2b-e47b-437c-923b-aee72b855d79.gif)
