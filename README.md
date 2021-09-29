@@ -11,7 +11,7 @@ Clone the repository:
 https://github.com/mayamau/Tic-Tac-Toe.git
 ``` 
 
-Install dependencies via Command Prompt/ Terminal:
+Install dependencies via Command Prompt/Terminal:
 
 ``` 
 pip install requirements.txt
